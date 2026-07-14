@@ -1,0 +1,17 @@
+
+if SHIELD_doughdactyl_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "doughDactyl"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_doughdactyl_LEFT
+
+if SHIELD_doughdactyl_LEFT || SHIELD_doughdactyl_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_doughdactyl_LEFT || SHIELD_doughdactyl_RIGHT
